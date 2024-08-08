@@ -1,13 +1,25 @@
 pipeline{
   agent any
 
+  // options{
+    // timeout(time: 1, unit: "HOURS")
+  // }
+
   environment{
     MY_VAR_STRING = 'une variable'
     MY_VAR_NUMBER = 123
   }
-
+ 
   stages{
+
+
+
     stage('build'){
+
+      options{
+        timestamps()
+      }
+      
       steps{
         echo "Build application ...${}"
         echo "Variable d'environnement native di Jenkins-> BRANCH_NAME: ${ env.BRANCH_NAME}"
@@ -19,6 +31,10 @@ pipeline{
         echo "Variable d'environnement custom -> MY_VAR_NUMBER: ${ env.MY_VAR_NUMBER}"
         sh 'printenv'
       }
+
+      
+      
+      
     }
     
     stage('tests'){
