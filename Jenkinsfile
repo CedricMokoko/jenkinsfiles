@@ -10,13 +10,14 @@ pipeline{
   }
  
 
-  parameters{
-    string(name: 'NAME',  defaultValue: 'M. Jenkins', description: 'Qui est ce?')
-    text(name: 'TEXT',  defaultValue: 'un text', description: 'Une description')
-    booleanParam(name: 'TOGGLE',  defaultValue: true, description: 'True ou False')
-    choice(name: 'CHOICE',  choices: ['un', 'deux', 'trois'], description: 'Liste')
-    password(name: 'PASSWORD', description: 'Un mot de passe')
-  }
+  //J'ai commenté pour pouvoir observer le trigger
+  // parameters{
+  //   string(name: 'NAME',  defaultValue: 'M. Jenkins', description: 'Qui est ce?')
+  //   text(name: 'TEXT',  defaultValue: 'un text', description: 'Une description')
+  //   booleanParam(name: 'TOGGLE',  defaultValue: true, description: 'True ou False')
+  //   choice(name: 'CHOICE',  choices: ['un', 'deux', 'trois'], description: 'Liste')
+  //   password(name: 'PASSWORD', description: 'Un mot de passe')
+  // }
 
   environment{
     MY_VAR_STRING = 'une variable'
