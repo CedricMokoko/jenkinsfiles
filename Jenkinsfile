@@ -11,7 +11,7 @@ pipeline{
   }
  
 
-  //J'ai commenté pour pouvoir observer le trigger
+  //J'ai commenté pour pouvoir observer les triggers
   // parameters{
   //   string(name: 'NAME',  defaultValue: 'M. Jenkins', description: 'Qui est ce?')
   //   text(name: 'TEXT',  defaultValue: 'un text', description: 'Une description')
