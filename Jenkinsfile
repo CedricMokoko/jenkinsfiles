@@ -42,10 +42,10 @@ pipeline{
         echo "Variable d'environnement custom -> MY_VAR_NUMBER: ${ env.MY_VAR_NUMBER}"
         sh 'printenv'
 
-        echo "Mon parametre NAME: ${NAME}"
-        echo "Mon parametre TEXTE: ${TEXT}"
-        echo "Mon parametre TOGGLE: ${TOGGLE}"
-        echo "Mon parametre PASSWORD: ${PASSWORD}" //En prod il ne faut pas le faire, c'est pas une bonne pratique
+        // echo "Mon parametre NAME: ${NAME}"
+        // echo "Mon parametre TEXTE: ${TEXT}"
+        // echo "Mon parametre TOGGLE: ${TOGGLE}"
+        // echo "Mon parametre PASSWORD: ${PASSWORD}" //En prod il ne faut pas le faire, c'est pas une bonne pratique
       }
     }
     
